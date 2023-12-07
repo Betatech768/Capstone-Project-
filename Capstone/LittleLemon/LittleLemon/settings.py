@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'BookingApi',
+    'djoser'
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,8 @@ ROOT_URLCONF = 'LittleLemon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # The settings for templates updated for the Graded assessment
+        'DIRS': ['restaurant/templates' ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
