@@ -22,6 +22,7 @@ from djoser.views import TokenCreateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('BookingApi.urls')),
+    path('',include('BookingApi.urls')),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.authtoken')),
     path('api-token-auth/', TokenCreateView.as_view(), name='api-token-auth'),
